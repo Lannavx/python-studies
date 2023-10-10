@@ -1,7 +1,7 @@
 # Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 
 # int = conversão de uma variável ou string para um número inteiro
-# float = transforma um dado em um tipo flutuante, ou seja, um número com casa decimal
+# float = transforma um dado em um tipo flutuante, ou seja, um número com casa decimal e abrande todos os outros números - geral
 primeira_nota = int(input("Infome sua nota 1: "))
 segunda_nota = float(input("Infome sua nota 2: "))
 terceira_nota = int(input("Infome sua nota 3: "))
