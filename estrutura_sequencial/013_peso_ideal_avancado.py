@@ -4,9 +4,14 @@
         2.Para mulheres: (62.1*h) - 44.7
 """
 
-genero = input(' ')
+genero = input('Informe se você é homem ou mulher: ').lower()
 altura = float(input('Informe sua altura: '))
+formula_mulheres = (62.1 * altura) - 44.7
+formula_homens = (72.7 * altura) - 58
 
-para_mulheres = (62.1*altura) - 44.7
-para_homens = (72.7*altura) - 58
-
+if genero == 'mulher':
+    print(f'Seu peso ideal é {formula_mulheres:.2f}')
+elif genero == 'homem':
+    print(f'Seu peso ideal é {formula_homens:.2f}')
+else:
+    print('Genêro não identificado')
