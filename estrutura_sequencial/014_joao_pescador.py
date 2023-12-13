@@ -9,3 +9,13 @@
         3. Imprima os dados do programa com as mensagens adequadas.
 
 """
+peso_peixe = float(input('Informe o peso adquirido hoje: '))
+peso_limite = 50
+taxa_multa = 4
+if peso_peixe > peso_limite:
+    diferença_peso = peso_peixe - peso_limite
+    multa = diferença_peso * taxa_multa
+    print(f'O peso de peixes excede {diferença_peso:.2f}kgs, logo será aplicado uma multa no total de R${multa:.2f}')
+else:
+    print('Peso dentro do regulamento!')    
+print('Tenha um bom dia!')    
