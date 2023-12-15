@@ -14,3 +14,16 @@
             = Salário Liquido : R$+
     Obs.: Salário Bruto - Descontos = Salário Líquido.
 """
+
+ganho_hora = float(input('Informe quanto você ganha por hora: R$'))  
+hora_trabalhada = float(input('Informe o número de horas trabalhadas no mês: '))
+salario = ganho_hora * hora_trabalhada
+ir = salario * 0.11
+inss = salario * 0.08
+sindicato = salario * 0.05
+print(f'''+ Salário Bruto : R${salario:.2f}
+- IR (11%) : R$ {ir:.2f}
+- INSS (8%) : R$ {inss:.2f}
+- Sindicato (5%) : R$ {sindicato:.2f}
+= Salário Liquido : R$+ {salario - ir - inss - sindicato:.2f}
+''' )
