@@ -35,3 +35,7 @@ if inverso == junto:
     print('A frase digitada é um Palíndromo!')
 else:
     print('A frase digitada não é um Palíndromo!')
+
+
+
+    
