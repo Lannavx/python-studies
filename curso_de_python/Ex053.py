@@ -23,7 +23,6 @@ else:
     print('A frase digitada não é um Palíndromo!')  
 
 #Forma do Professor
-
 frase = str(input('Digite uma frase: ')).strip().upper()
 palavras = frase.split()
 junto = ''.join(palavras)
@@ -36,6 +35,3 @@ if inverso == junto:
 else:
     print('A frase digitada não é um Palíndromo!')
 
-
-
-    
