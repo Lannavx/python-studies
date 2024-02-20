@@ -6,12 +6,12 @@ print('''Escolha uma das bases para conversão:
 [1] Conversão para Binário
 [2] Conversão para Octal
 [3] Conversão para Hexadecimal''')
-opção = int(input('Digite a sua opção: '))
-if opção == 1:
+opcao = int(input('Digite a sua opção: '))
+if opcao == 1:
     print(f'{numero} convertido para Binário é igual a {bin(numero)[2:]}')
-elif opção == 2:
+elif opcao == 2:
     print(f'{numero} convertido para Octal é igual a {oct(numero)[2:]}')
-elif opção == 3:
+elif opcao == 3:
     print(f'{numero} convertido para Hexadecimal é igual a {hex(numero)[2:]}')
 else: 
     print('Opção inválida! Tente novamente!')   

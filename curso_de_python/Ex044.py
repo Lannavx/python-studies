@@ -4,24 +4,24 @@
 - em até 2x no cartão: preço formal
 - 3x ou mais no cartão: 20% de juros'''
 
-preço= float(input('Informe o valor do produto: R$'))
+preco= float(input('Informe o valor do produto: R$'))
 print('''[1] - À vista dinheiro / cheque')
 [2] - À vista no cartão
 [3] - Em até 2x no cartão
 [4] - 3x ou mais no cartão''')
-condição = input('Informe uma condição de pagamento conforme o menu: ')
+condicao = input('Informe uma condição de pagamento conforme o menu: ')
 
-if condição == '1':
-    print(f'Você ganhou 10% de desconto! O valor do seu produto é de R${preço - (preço * 0.10):.2f}')
-elif condição == '2':
-    print(f'Você ganhou 5% de desconto! O valor do seu produto é de R${preço - (preço * 0.05):.2f}')
-elif condição == '3':
-    total = preço
+if condicao == '1':
+    print(f'Você ganhou 10% de desconto! O valor do seu produto é de R${preco - (preco * 0.10):.2f}')
+elif condicao == '2':
+    print(f'Você ganhou 5% de desconto! O valor do seu produto é de R${preco - (preco * 0.05):.2f}')
+elif condicao == '3':
+    total = preco
     parcela = total / 2
     print(f'Sua compara será parcelada em 2x de R${parcela}')
-    print(f'Você não ganha nenhum desconto! O valor do seu produto continua sendo de R${preço:.2f}')
-elif condição == '4':
-     total = preço + (preço * 0.20)
+    print(f'Você não ganha nenhum desconto! O valor do seu produto continua sendo de R${preco:.2f}')
+elif condicao == '4':
+     total = preco + (preco * 0.20)
      total_parcelas = int(input('Quantas parcelas? '))  
      parcela = total / total_parcelas
      print(f'No parcelamento de {total_parcelas}x sua compara será parcelada em R${parcela:.2f}!')

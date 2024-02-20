@@ -7,9 +7,9 @@ from random import randint
 print('Ei, vamos jogar um jogo! Vou pensar em um número entre 0 e 10 e você precisa adinvinhar qual é!')
 print('Valendoo!')
 numero_secreto = randint(0,10)
-numero_usuário = int(input('Informe o seu palpite: '))
-while numero_usuário != numero_secreto:
-    numero_usuário = int(input('Você errou! Tente novamente: '))
+numero_usuario = int(input('Informe o seu palpite: '))
+while numero_usuario != numero_secreto:
+    numero_usuario = int(input('Você errou! Tente novamente: '))
     palpite += 1
 print(f'Parabéns, você acertou! Foram necessárias {palpite} tentativas!')
 
@@ -22,13 +22,13 @@ numero_secreto = randint(0,10)
 acertou = False
 palpite = 0
 while not acertou:
-    numero_usuário = int(input('Informe o seu palpite: '))
+    numero_usuario = int(input('Informe o seu palpite: '))
     palpite += 1
-    if numero_usuário == numero_secreto:
+    if numero_usuario == numero_secreto:
         acertou = True
     else:
-        if numero_usuário < numero_secreto:
+        if numero_usuario < numero_secreto:
             print('Mais...tente novamente!')
-        elif numero_usuário > numero_secreto:
+        elif numero_usuario > numero_secreto:
             print('Menos...tente novamente!')   
 print(f'Parabéns, você acertou! Foram necessárias {palpite} tentativas!')

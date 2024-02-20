@@ -2,10 +2,10 @@
 
 #Forma 1
 nome = str(input('Informe seu nome completo: ')).lower()
-condição = 'silva' in nome
-print(f'Seu nome tem Silva? {condição}')
+condicao = 'silva' in nome
+print(f'Seu nome tem Silva? {condicao}')
 
 #Forma 2
 nome = str(input('Informe seu nome completo: ')).strip()
-condição = 'silva' in nome.lower() 
-print(f'Seu nome tem Silva? {condição}')
+condicao = 'silva' in nome.lower() 
+print(f'Seu nome tem Silva? {condicao}')

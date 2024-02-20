@@ -5,10 +5,10 @@ em que posição ela aparece a primeira vez e em que posição ela aparece a úl
 
 frase = str(input('Informe uma frase qualquer: ')).strip().upper()
 vezes = frase.count('A')
-posição_1 = frase.find('A')
-posição_2 = frase.rfind('A')
+posicao_1 = frase.find('A')
+posicao_2 = frase.rfind('A')
 print(f'A letra A aparece {vezes} vezes na frase')
-print(f'A primeira posição da letra A é {posição_1+1} e a última é {posição_2+1}')
+print(f'A primeira posição da letra A é {posicao_1+1} e a última é {posicao_2+1}')
 
 #Forma 2
 
