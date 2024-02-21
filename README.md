@@ -8,12 +8,14 @@ Este repositório documenta minha jornada de aprendizado em Python, contendo exe
 # 📑 Estrutura do Repositório
 Este repositório está organizado da seguinte forma:  
 
-**Curso_de_python**: Contém os exercícios e as resoluções baseado no [curso em vídeo do Guanabara](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6), abrangendo conceitos fundamentais de Python. 
+**Curso_de_python**: Contém os exercícios e as soluções baseados no [curso em vídeo do Guanabara](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6), abrangendo conceitos fundamentais de Python. 
 
 **Estrutura_sequencial**: Inclui uma série de exercícios focados em estruturas sequenciais da [Lista de Exercícios Python Brasil](https://wiki.python.org.br/ListaDeExercicios) com as minhas resoluções.  
 Conforme avanço no  aprendizado, novas pastas serão adicionadas para refletir categorias de exercícios mais avançadas.  
 
-Cada pasta contém arquivos Python numerados de acordo com os exercícios, facilitando a navegação e o estudo.  
+**Projetos**: Reúne todos os projetos desenvolvidos durante meus estudos em Python, desde projetos acadêmicos até projetos pessoais e de cursos em geral, todos com o objetivo de aprimorar minhas habilidades na linguagem.
+
+Cada pasta contém arquivos Python numerados de acordo com os exercícios ou projetos, facilitando a navegação e o estudo.  
 
 # ✏️ Como Usar
 Você pode navegar pelas pastas e acessar os exercícios e suas resoluções. Os arquivos estão organizados de acordo com o número do exercício.
