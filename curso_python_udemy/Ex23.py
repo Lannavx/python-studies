@@ -83,7 +83,7 @@ def salvar(tarefas, caminho_arquivo):
     return dados    
 
 
-CAMINHO_ARQUIVO = 'ex023.json'
+CAMINHO_ARQUIVO = 'ex23.json'
 tarefas = ler([], CAMINHO_ARQUIVO)
 tarefas_refazer = []
 
