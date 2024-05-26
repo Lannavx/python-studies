@@ -17,3 +17,37 @@ No exemplo o valor da hora é 5 e a quantidade de hora é 220.
         FGTS (11%)                      : R$  121,00
         Total de descontos              : R$  165,00
         Salário Liquido                 : R$  935,00'''
+
+valor_hora = float(input('Informe o valor da sua hora: R$ '))
+horas_mes = int(input('Informe a quantidade de horas trabalhadas no mês: '))
+
+salario_bruto = valor_hora * horas_mes
+inss = salario_bruto * 0.10
+fgts = salario_bruto * 0.11
+
+if salario_bruto <= 900:
+     imposto_renda = 0
+     porcentagem = 0
+elif salario_bruto <= 1500:
+    porcentagem = 5
+    imposto_renda = salario_bruto * (porcentagem / 100)
+elif salario_bruto <= 2500:
+     porcentagem = 10
+     imposto_renda = salario_bruto * (porcentagem / 100)
+else:
+    porcentagem = 20
+    imposto_renda = salario_bruto * (porcentagem / 100)
+
+descontos =  imposto_renda + inss
+salario_liquido = salario_bruto - descontos
+
+print('=' * 36)
+
+print(f'''
+Salário Bruto:           R$ {salario_bruto:.2f}
+(-) IR ({porcentagem}%):            R$ {imposto_renda:.2f}
+(-) INSS (10%):          R$ {inss:.2f}
+FGTS (11%):              R$ {fgts:.2f}
+Total de descontos:      R$ {descontos:.2f}
+Salário Líquido:         R$ {salario_liquido:.2f}
+''') 
