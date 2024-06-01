@@ -7,11 +7,11 @@ num_dois = int(input('Informe outro número: '))
 inicio = min(num_um, num_dois) + 1
 fim = max(num_um, num_dois) - 1
 
-print('-' * 30)
-print(f'O intervalo de números entre {num_um} e {num_dois} é: ')
-
 # Verifica se existe algum número no intervalo para imprimir
 if inicio <= fim:
+    print('-' * 30)
+    print(f'O intervalo de números entre {num_um} e {num_dois} é: ')
+
     # Usa o laço for para imprimir diretamente cada número no intervalo
     for numeros in range(inicio, fim + 1):
         print(numeros, end='')
