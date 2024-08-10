@@ -1,6 +1,11 @@
-'''Faça um programa que carregue uma lista com os modelos de cinco carros (exemplo de modelos: FUSCA, GOL, VECTRA etc). Carregue uma outra lista com o consumo desses carros, isto é, quantos quilômetros cada um desses carros faz com um litro de combustível. Calcule e mostre:
+'''Faça um programa que carregue uma lista com os modelos de cinco carros (exemplo de modelos: FUSCA, GOL, VECTRA etc). 
+Carregue uma outra lista com o consumo desses carros, isto é, quantos quilômetros cada um desses carros faz com um litro de combustível. 
+Calcule e mostre:
 a. O modelo do carro mais econômico;
-b. Quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma distância de 1000 quilômetros e quanto isto custará, considerando um que a gasolina custe R$ 2,25 o litro. Abaixo segue uma tela de exemplo. O disposição das informações deve ser o mais próxima possível ao exemplo. Os dados são fictícios e podem mudar a cada execução do programa.
+b. Quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma distância de 1000 quilômetros e quanto isto custará, 
+considerando que a gasolina custe R$ 2,25 o litro. Abaixo segue uma tela de exemplo. 
+A disposição das informações deve ser o mais próxima possível ao exemplo. 
+Os dados são fictícios e podem mudar a cada execução do programa.
 Comparativo de Consumo de Combustível
 
 Veículo 1
@@ -26,3 +31,44 @@ Relatório Final
  4 - vectra          -    9.0 -  111.1 litros - R$ 250.00
  5 - peugeout        -   14.5 -   69.0 litros - R$ 155.17
 O menor consumo é do peugeout.'''
+
+import random
+
+DISTANCIA = 1000
+VALOR_GASOLINA = 2.25
+
+
+modelos_carros = ['Fusca', 'Gol', 'Uno', 'Vectra', 'Peugeout']
+random.shuffle(modelos_carros) # Embaralha a lista de carros
+quantidade_carros = len(modelos_carros)
+ 
+# Gera valores aleatoriamente com base na quantidade de carros
+consumo = [random.uniform(1,20) for _ in range(quantidade_carros)]
+
+# Lista para armazenar os dados de cada carro, incluindo litros necessários e custo
+dados_carro = []
+
+print('Comparativo de Consumo de Combustível\n')
+
+# Exibe os dados dos veiculos e calcula o consumo e custo para cada carro
+for i in range(quantidade_carros):
+    print(f'Veiculo {i + 1}')
+    print(f'Nome: {modelos_carros[i]}')  
+    print(f'Km por litro: {consumo[i]:.1f}')        
+
+    
+    litros = DISTANCIA / consumo[i]
+    valor_gasolina_percorrida = litros * VALOR_GASOLINA
+
+    # Armazena os dados calculados
+    dados_carro.append([litros, modelos_carros[i], valor_gasolina_percorrida])
+
+print('\nRelatório Final')
+
+# Exibe o relatório final
+for i in range(quantidade_carros):
+    print(f'{i+1} - ' +  f'{modelos_carros[i]:<10} -' + f'{consumo[i]:>8.1f} -' + f'{dados_carro[i][0]:>8.1f} litros - ' + f'R${dados_carro[i][2]:.2f}')
+    
+# Identifica e exibe o veículo com menor consumo    
+veiculo_menor_consumo = min(dados_carro)
+print(f'O menor consumo é do {veiculo_menor_consumo[1]}')
