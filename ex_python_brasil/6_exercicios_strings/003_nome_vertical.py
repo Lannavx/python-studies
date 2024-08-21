@@ -5,4 +5,11 @@ U
 L
 A
 N
-O'''
+O
+'''
+# Solicita ao usuário que digite um nome
+nome = input('Digite seu nome: ').strip().upper()
+
+# Imprime o nome na vertical
+for letra in nome:
+    print(letra)
