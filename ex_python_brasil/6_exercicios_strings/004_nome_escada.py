@@ -6,3 +6,10 @@ FUL
 FULA
 FULAN
 FULANO'''
+
+# Solicita ao usuário que digite seu nome
+nome = input('Digite seu nome: ').strip().upper()
+
+# Imprime o nome na vertical em formato de escada
+for i in range(1, len(nome) + 1):
+    print(nome[:i])
