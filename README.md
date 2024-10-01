@@ -10,7 +10,7 @@ Este repositório está organizado da seguinte forma:
 
 **Curso_de_python_guanabara**: Contém os exercícios e as soluções baseados no [curso em vídeo do Guanabara](https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6), abrangendo conceitos fundamentais de Python. 
 
-**Curso_python_udemy**: Continuidade do aprendizado de python com o [curso da plataforma udemy](https://www.udemy.com/share/101rZm3@ltctX9YJDbngg7JQYiYyV0doH6YK2ZYWcZwhsW8T7wn2VLMnGeLuojDLjKsF7aZJ/). Foco em assuntos como programação orientada a objetos e desenvolvimento web.
+**Curso_python_udemy**: Continuidade do aprendizado de python com o [curso da plataforma udemy](https://www.udemy.com/share/101rZm3@ltctX9YJDbngg7JQYiYyV0doH6YK2ZYWcZwhsW8T7wn2VLMnGeLuojDLjKsF7aZJ/). Foco em assuntos como programação orientada a objetos, banco de dados e desenvolvimento web.
 
 **Ex_python _brasil**: Inclui uma série de exercícios focados em estruturas de dados e algoritmos da [Lista de Exercícios Python Brasil](https://wiki.python.org.br/ListaDeExercicios) com as minhas resoluções.  
 
