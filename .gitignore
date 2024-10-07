@@ -3,5 +3,5 @@ venv/
 db.sqlite3
 db_mysql/
 **/__pycache__/
-
+static_files/
 
